@@ -1,0 +1,299 @@
+body{
+	/*background-color: 	#b2d8d8;*/
+}
+.wbs{
+	top: 0;
+	background-color: #006666;
+  height: 45px;
+}
+.wbs a{
+	color: white;
+	font-size: 30px;
+}
+/*/*//////WBS glowing -- needs too much power!/////*/
+h1 {
+  background-color: black;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.glow {
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+*/
+/*/////////navbar///////////////////*/
+
+#logout{
+	float: right;
+}
+#back{
+	float: left;
+}
+ #back, #logout{
+ 	top: 12.5%;
+ 	height: 30px;
+ 	width: 25%;
+ 	color: white;
+ 	background-color: black;
+ 	border: none;
+ 	font-size: 15px;
+ }
+ #back:hover, #logout:hover{
+ 	background-color: skyblue;
+ 	color: white;
+ }
+
+/*///////Index split////////////*/
+.split {
+  height: 80%;
+  width: 50%;
+  position: fixed;
+  /*z-index: 1;*/
+  bottom: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+  font-family: 'Montserrat', sans-serif;
+  color: white; /*added*/
+}
+
+.left {
+  left: 0;
+  background-color: #66b2b2;
+}
+
+.right {
+  right: 0;
+  background-color: skyblue;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+/*----*/
+/*/////ANCHORS////*/
+a{
+	text-decoration: none;
+}
+
+/*///////tables////////*/
+table{
+	padding: 10px;
+}
+
+#previous_reading,
+#my_profile,
+#pay_bill_consumer, #pay_bill_meter, #pay_bill_billing, 
+#my_complaints, #review {
+  border-collapse: collapse;
+  width: 80%;
+}
+
+ td {
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  padding: 8px;
+}
+
+ /*tr:nth-child(even){background-color: #f2f2f2}*/
+
+ th {
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  padding: 8px;
+  background-color: #338DFF;
+  color: white;
+  font-family: 'Inter', sans-serif;
+}
+/*----*/
+ /*///////////dashboard link cards///////////*/
+* {
+  box-sizing: border-box;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  color: white;
+  background-color: #2E86C1;
+}
+
+.card:hover{
+	color: #2E86C1;
+	background-color: #A6ACAF ;
+}
+
+/*------*/
+/*//////////////input boxes////////////*/
+input[type='text'], input[type = 'email'], input[type = 'password'], input[type = 'date'], input[type = 'number']{
+ 	background: none;
+ 	text-align: center;
+ 	font-family: 'Inter', sans-serif;
+	border-radius: 5px;
+	padding: 10px;
+	width: 150px;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom:1px solid yellow;
+	transition: ease-in-out, width .50s ease-in-out;
+    font-size: 25px; 
+
+}
+
+ input[type='text'],input[type = 'email'], input[type = 'password'], input[type = 'date'], input[type='number']:focus{
+ 	 width: 350px;
+ 	 border-bottom: 3px solid green;
+ 	 outline: none;
+ 	 color: green;
+ 	}
+
+/*input[type="text"], input[type="password"], input[type="number"],
+ input[type="email"], input[type="date"] :focus{
+   width: 200px;
+   border-bottom: skyblue;
+}
+
+input[type="date"]{
+	height: 50%;
+    width: 75px;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+}*/
+select, option{
+	width: 200px;
+	height: 30px;
+}
+
+input[type="submit"]{
+	margin-top: 25px;
+	width: 100px;
+	height: 40px;
+	border:none;
+	border-radius: 2px;
+	color: white;
+	background-color: #2E86C1;
+
+}
+input[type="submit"]:hover{
+	color: #2E86C1;
+	background-color: #A6ACAF;
+	cursor: pointer;
+}
+
+
+
+/*///////////////////in-pages//////////////////*/
+h2{
+	font-family: 'Montserrat', sans-serif;
+}
+
+#error{
+	color: red;
+	font-size: 25px;
+}
+
+#success{
+	color: green;
+	font-size: 25px;
+}
+
+#pay_button{
+	height: 60px;
+ 	width: 100%;
+ 	color: white;
+ 	background-color: green;
+ 	border: none;
+ 	font-size: 22px;
+}
+#pay_button:hover{
+	background-color: skyblue;
+}
+
+textarea {
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+#pre_comp_button{
+	height: 60px;
+ 	width: 100%;
+ 	color: white;
+ 	background-color: #2E86C1;
+ 	border: none;
+ 	font-size: 22px;
+}
+#pre_comp_button:hover{
+	background-color: green;
+}
+
+/*/////////footer/////////*/
+footer{
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 50px;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
